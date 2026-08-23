@@ -1,0 +1,46 @@
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Two things first.
+
+        If this is a **security** matter — a wrong amount, a leaked key, credit
+        assigned to the wrong person — close this and file a
+        [private advisory](https://github.com/dedalo-org/dedalo/security/advisories/new)
+        instead.
+
+        And never paste a private key or a seed phrase. Not a test one, not a
+        revoked one. Addresses are public and fine.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What are you trying to do
+      description: The situation, not just the error. What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: commands
+    attributes:
+      label: What you ran
+      description: >
+        The exact commands, and their output. `--json` output is easier to
+        read back than a table.
+      render: shell
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: "`dedalo --version`, or the commit you built from."
+
+  - type: textarea
+    id: config
+    attributes:
+      label: Relevant part of dedalo.toml
+      description: >
+        `dedalo.toml` is a public record by design, so it is safe to paste —
+        but paste only the part that matters.
+      render: toml

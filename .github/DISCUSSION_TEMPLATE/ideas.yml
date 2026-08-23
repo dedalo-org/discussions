@@ -1,0 +1,35 @@
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Anything that changes what people are paid is a bigger change than it
+        looks. Describing the problem first is what makes it possible to
+        disagree about the solution.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: >
+        What you are trying to do, and where the current behaviour gets in the
+        way. Describe the situation, not the solution.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you would change
+      description: The flag, the config key, the output. Concretely.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: impact
+    attributes:
+      label: Impact
+      options:
+        - label: This would change what a round pays, or to whom
+        - label: This would change an existing interface or output
+        - label: I am willing to implement it
