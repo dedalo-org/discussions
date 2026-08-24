@@ -9,11 +9,16 @@ issue tracker.
 
 **→ [Open a discussion](https://github.com/orgs/dedalo-org/discussions)**
 
+Before asking how something works, the answer is probably in
+**[the handbook](https://dedalo-org.github.io/dedalo/)** — and if it is not,
+that is worth saying in the thread, because a question asked twice is a
+documentation bug.
+
 ## Which category
 
 | Category | For |
 | --- | --- |
-| **Q&A** | "how do I…", "why did my round…". Answerable, so a thread closes with an answer someone else can find. |
+| **Q&A** | "how do I…", "why did my round…". Answerable, so a thread closes with an answer someone else can find. Check [the handbook's FAQ](https://dedalo-org.github.io/dedalo/faq.html) first. |
 | **Ideas** | A change you want, before it is an issue. Cheaper to reject a paragraph than a branch. |
 | **Show and tell** | A project using Dedalo, a round you ran, something you built on top. |
 | **Announcements** | Releases and decisions. Maintainers post; anyone replies. |

@@ -1,0 +1,50 @@
+labels: ["show and tell"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Something you ran, built, or found out. Rounds included — a dry round
+        costs nothing and tells us more than any amount of design discussion.
+
+        Two things first, as everywhere here.
+
+        If an amount is or could be **wrong**, this is not the place — file a
+        [private advisory](https://github.com/dedalo-org/dedalo/security/advisories/new).
+        That includes credit assigned to the wrong person.
+
+        And never paste a private key or a seed phrase. Addresses are public
+        and fine.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What you did
+      description: >
+        A round you ran, a project you wired it into, something you built on
+        the library.
+    validations:
+      required: true
+
+  - type: input
+    id: plan-id
+    attributes:
+      label: Plan id
+      description: >
+        If this is a round — `dedalo plan --json | jq -r .id`. The whole
+        premise is that anyone can recompute a round and get the same numbers,
+        so a plan without an id is a claim nobody can check.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: "`dedalo --version`, or the commit you built from."
+
+  - type: textarea
+    id: surprise
+    attributes:
+      label: What surprised you
+      description: >
+        The most useful part of a post like this. A share that looked wrong, a
+        cap that had to move, more people in `unresolved` than expected — all
+        of it is input we cannot get any other way.
